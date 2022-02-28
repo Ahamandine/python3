@@ -11,9 +11,23 @@
 
 # réponse 2.1
 nombre = 42
-nbor = 1,61
+print(nombre)
+
+nbr = 1,61
+print(nbr)
+
 moi = "Amandine Ozdemir"
+print(moi)
+
 morning = True
+print(morning)
+
+not_morning= False
+print(not_morning)
+
+validation = None
+print(validation)
+
 # code 2.1
 # la fonction `round()` permet d'arrondir un float en un integer
 # 0,1 est arrondi à la valeur inférieur
@@ -24,6 +38,7 @@ print(round(0.9))
 # arrondir à un nombre décimal à 4 chiffres après la virgule
 print(round(1 / 3, 4))
 
+
 # exo 2.2
 # Stockez le valeurs suivantes dans une variable et transtypez-les :
 # - integer 2 en un float
@@ -33,4 +48,13 @@ print(round(1 / 3, 4))
 # À chaque fois stockez le résultat dans une variable et affichez le résultat.
 
 # réponse 2.2
+nb1 = 2
+print(float(nb1))
+print(nb1)
 
+nb2 = 1.62
+print(int(nb2))
+print(nb2)
+
+nb3 = 1.62
+print(float)
