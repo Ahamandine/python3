@@ -57,4 +57,5 @@ print(int(nb2))
 print(nb2)
 
 nb3 = 1.62
-print(float)
+print(round(nb3))
+print(nb3)
