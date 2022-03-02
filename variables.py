@@ -135,3 +135,4 @@ my_var = [[]]
 my_var = bool(my_var)
 print(my_var)
 
+my_var
