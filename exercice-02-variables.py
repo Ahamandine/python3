@@ -50,12 +50,15 @@ print(round(1 / 3, 4))
 # réponse 2.2
 nb1 = 2
 print(float(nb1))
-print(nb1)
 
 nb2 = 1.62
 print(int(nb2))
-print(nb2)
 
 nb3 = 1.62
-print(round(nb3))
+print(round(nb3, 0))
+nb3 = int(nb3)
 print(nb3)
+
+nb4 = 1.62
+print(round(nb4, 1))
+
