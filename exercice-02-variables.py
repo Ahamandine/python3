@@ -55,9 +55,12 @@ nb2 = 1.62
 print(int(nb2))
 
 nb3 = 1.62
-print(round(nb3, 0))
-nb3 = int(nb3)
+nb3 = (round(nb3, 0))
 print(nb3)
+print(round(nb3))
+#print(round(nb3, 0))
+#nb3 = int(nb3)
+#print(nb3)
 
 nb4 = 1.62
 print(round(nb4, 1))
