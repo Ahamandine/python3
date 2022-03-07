@@ -59,6 +59,11 @@ print(number)
 
 # réponse 4.3
 
+if number == number % 3 :
+    print("le nombre est divisible par 3")
+else :
+    print("le nombre n'est pas divisible par 3")
+
 # exo 4.4
 # écrivez un bloc if qui affiche
 # - "le nombre est supérieur ou égale à 5" si la variable number contient une valeur plus grande ou égale à 5
@@ -70,6 +75,11 @@ print(number)
 
 # réponse 4.4
 
+if number >= 5 :
+    print("le nombre est supérieur ou égale à 5")
+else:
+    print("le nombre est inférieur à 5")
+
 # exo 4.5
 # écrivez un bloc if qui affiche
 # - "le nombre est compris entre 0 et 49 inclus" si la variable number contient une valeur comprise entre 0 et 49
@@ -79,7 +89,13 @@ print(number)
 number = random.randint(0, 99)
 print(number)
 
+
 # réponse 4.5
+
+if number >= 0 and number <= 49:
+    print('le nombre est compris entre 0 et 49 inclus')
+else :
+    print("le nombre n'est pas compris entre 0 et 49 inclus")
 
 # exo 4.6
 # écrivez un bloc if qui affiche
@@ -92,6 +108,15 @@ number = random.randint(0, 99)
 print(number)
 
 # réponse 4.6
+
+if number >= 0 and number <= 33:
+    print('le nombre est compris entre 0 et 33 inclus')
+    
+elif number >= 34 and number <= 66:
+    print('le nombre est compris entre 34 et 66 inclus')
+
+else :
+    print("le nombre n'est pas compris entre 0 et 66 inclus")
 
 # exo 4.7
 # écrivez un bloc if qui affiche
@@ -108,6 +133,15 @@ b = random.randint(0, 99)
 print(b)
 
 # réponse 4.7
+
+if a > b :
+    print('le nombre a est supérieur au nombre b')
+
+elif a < b :
+    print("le nombre a est inférieur au nombre b")
+
+else:
+    print("les deux nombres a et b sont égaux")
 
 # code 4.3
 # affichage d'une variable avec une f-string
@@ -129,4 +163,11 @@ mails = random.randint(0, 5)
 print(mails)
 
 # réponse 4.8
+
+if mails == 0 :
+    print("il n'y a aucun mail")
+elif mails == 1:
+    print("il y a un nouveau mail")
+elif mails >= 1:
+    print(f"il y a {mails} nouveaux mails")
 
