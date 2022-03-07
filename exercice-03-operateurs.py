@@ -114,8 +114,8 @@ print(km)
 
 price = 314
 tax_rate = 20
-
-
+tax_fee = price * tax_rate / 100
+print(tax_fee)
 
 # réponse 3.7
 
@@ -136,6 +136,9 @@ tax_rate = 20
 
 price = 271
 tax_rate = 20
+
+tax_included_price = 271 * (1 + 20 / 100)
+print(tax_included_price)
 
 # réponse 3.8
 
