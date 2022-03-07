@@ -137,10 +137,10 @@ print(tax_fee)
 price = 271
 tax_rate = 20
 
+# réponse 3.8
+
 tax_included_price = 271 * (1 + 20 / 100)
 print(tax_included_price)
-
-# réponse 3.8
 
 # exo 3.9
 # Charly fait ses courses.
@@ -154,4 +154,9 @@ print(tax_included_price)
 # Affichez le résultat booléen.
 
 # réponse 3.9
-
+price1= 1.7
+price2= 1.79
+price_kilo_1 =  1000 * 1.79 / 120
+price_kilo_2 = 1.7 * 10
+comparaison= price_kilo_1 < price_kilo_2
+print(comparaison) 
