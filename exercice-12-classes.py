@@ -77,7 +77,7 @@ users = [user1, user2, user3, user4]
 
 for i in users:
     if True:
-        print(f" {users.firstname} {users.email}")
+        print(f" {self.firstname} {self.email}")
 
 # exo 12.4
 # Créez une classe nommée `ProductLorem` qui possède les attributs suivants :
@@ -144,6 +144,8 @@ product3 = ProductLorem('Baz', 16.18)
 print("Exercice 12.6")
 
 products = [product1, product2, product3]
+for i in products:
+    print(f"{products._price} {products._name}")
 
 # exo 12.7
 # Créez une classe nommée `ProductIpsum` qui possède les attributs suivants :
