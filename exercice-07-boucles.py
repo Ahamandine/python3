@@ -36,8 +36,8 @@ print(i)
 # réponse 7.3
 print("Exercice 7.3")
 
-for i in range(1, 100):
-    r = random.randint(1, 10 + 1)
+for i in range(1, 100 + 1):
+    r = random.randint(1, 10)
     if r == 1:
         print(r)
 
@@ -50,8 +50,8 @@ for i in range(1, 100):
 # réponse 7.4
 print("Exercice 7.4")
 
-for i in range(1, 50):
-    r = random.randint(1, 10 + 1)
+for i in range(1, 50 + 1):
+    r = random.randint(1, 10)
     if r <= 5:
         print(r)
 
@@ -64,7 +64,7 @@ for i in range(1, 50):
 print("Exercice 7.5")
 
 for i in range(1, 20):
-    r = random.randint(1, 10 + 1)
+    r = random.randint(1, 10)
     if r >= 6:
         print(r)
 
@@ -77,7 +77,7 @@ for i in range(1, 20):
 print("Exercice 7.6")
 
 for i in range(1, 100):
-    r = random.randint(1, 10 + 1)
+    r = random.randint(1, 10)
     if r == 1 or r == 10:
         print(r)
 # exo 7.7
@@ -87,7 +87,7 @@ for i in range(1, 100):
 # réponse 7.7
 print("Exercice 7.7")
 for i in range(1, 10):
-    r = random.randint(1, 10 + 1)
+    r = random.randint(1, 10)
     if r >= 3  and r <= 8:
         print(r)
 # exo 7.8
@@ -97,13 +97,13 @@ for i in range(1, 10):
 
 # réponse 7.8
 print("Exercice 7.8")
-def count(r):
-    for i in enumerate(1, 50):
-        r = random.randint(1, 10 + 1)
+count = 0
+for i in range(50):
+    r = random.randint(1, 10)
     if r == 7:
-        return r
-print(count)
-#formule non trouvée
+        count += 1
+        print(count)
+
 
 # exo 7.9
 # en utilisant une boucle for, on tire 10 fois un nombre entier `r` au hasard entre 1 et 10 inclus
@@ -112,9 +112,11 @@ print(count)
 
 # réponse 7.9
 print("Exercice 7.9")
+count = 0
 for i in range(1, 10):
-    r = random.randint(1, 10 + 1)
+    r = random.randint(1, 10)
     if r <= 4:
+        count += 1
         print(r)
 
 # exo 7.10
@@ -124,9 +126,11 @@ for i in range(1, 10):
 
 # réponse 7.10
 print("Exercice 7.10")
+count = 0
 for i in range(1, 33):
-    r = random.randint(1, 11)
+    r = random.randint(1, 10)
     if r >= 7:
+        count += 1
         print(r)
 
 # exo 7.11
@@ -137,9 +141,9 @@ for i in range(1, 33):
 print("Exercice 7.11")
 count = 0
 for i in range(1, 66):
-    r = random.randint(1, 10 +1)
+    r = random.randint(1, 10)
     if r <=2 or r >= 9:
-        count =+ i
+        count += 1
         print(r)
 
 # exo 7.12
@@ -149,9 +153,11 @@ for i in range(1, 66):
 
 # réponse 7.12
 print("Exercice 7.12")
+count = 0
 for i in range(1, 100):
     r = random.randint(1, 11)
     if r >= 2 and r <= 9:
+        count += 1
         print(r)
 # exo 7.13
 # en utilisant une boucle for, affichez tous les nombre pairs, de 1 à 99 inclus
@@ -159,6 +165,7 @@ for i in range(1, 100):
 # réponse 7.13
 
 print("Exercice 7.13")
+count = 0
 for i in range(0, 100):
     if i % 2 == 0 :
         print(i)
