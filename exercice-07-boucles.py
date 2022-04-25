@@ -135,9 +135,11 @@ for i in range(1, 33):
 # affichez la variable `count`
 # réponse 7.11
 print("Exercice 7.11")
+count = 0
 for i in range(1, 66):
-    r = random.randint(1, 11)
+    r = random.randint(1, 10 +1)
     if r <=2 or r >= 9:
+        count =+ i
         print(r)
 
 # exo 7.12
