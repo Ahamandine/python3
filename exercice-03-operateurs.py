@@ -9,10 +9,6 @@
 
 # réponse 3.1
 
-from calendar import c
-from statistics import median
-
-
 birthyear = 1988
 year = 2022
 age = year - birthyear
@@ -57,7 +53,7 @@ print(chocolates_per_pers)
 
 # réponse 3.4
 
-moy = (1 + 1 + 2 + 3 + 5 + 8 + 13) // 7
+moy = (1 + 1 + 2 + 3 + 5 + 8 + 13) / 7
 print(moy)
 
 # exo 3.5
@@ -139,7 +135,7 @@ tax_rate = 20
 
 # réponse 3.8
 
-tax_included_price = 271 * (1 + 20 / 100)
+tax_included_price = price * (1 + tax_rate / 100)
 print(tax_included_price)
 
 # exo 3.9
