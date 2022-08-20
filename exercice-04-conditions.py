@@ -41,8 +41,8 @@ number = random.randint(0, 9)
 print(number)
 
 # réponse 4.2
-
-number = number % 2
+print('Exercice 4.2')
+# number = number % 2
 if number == 0 :
     print('le nombre est pair')
 else :
