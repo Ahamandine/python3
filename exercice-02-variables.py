@@ -13,7 +13,7 @@
 nombre = 42
 print(nombre)
 
-nbr = 1,61
+nbr = 1.61
 print(nbr)
 
 moi = "Amandine Ozdemir"
