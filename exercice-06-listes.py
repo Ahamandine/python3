@@ -1,7 +1,8 @@
 # exercice-06-listes.py
 
 import random
-from re import M
+from tokenize import maybe
+
 
 # Remarque 6.1
 # Dans le texte, quand il est écrit Xème position, cela correspond à l'index X-1
@@ -65,50 +66,83 @@ print(my_list)
 
 # exo 6.8
 # Calculez la somme des nombres de la liste et affichez le résultat
-# my_list = [2.71, 42]
-# cart = [2.71, 42]
-# somme = 0
-# for my_list in cart:
-#     somme += cart
-# print(my_list)
+my_list = [2.71, 42]
 
 # réponse 6.8
+
+print("-----------exo 6.8----------")
+total = 0
+for i in my_list:
+    total += i
+print(total)
 
 # exo 6.9
 # Calculez la somme des nombres de la liste et affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.9
-
+print("-----------Exo 6.9-----------")
+total = 0
+for i in my_list:
+    total += i
+print(total)
 # exo 6.10
 # Calculez la moyenne des nombres de la liste et affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.10
+print("-----------exo 6.10----------")
+median = 0
+for i in my_list:
+    median += i / len(my_list)
+print(median)
 
 # exo 6.11
 # Trouvez l'index de la valeur `3.14` dans la liste et affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
-
 # réponse 6.11
+
+print("------------exo 6.11-----------")
+piIndex = [index for (index, number) in enumerate(my_list) if number == 3.14]
+print(piIndex)
 
 # exo 6.12
 # Comptez les nombres plus petits ou égaux à 10 dans la liste et affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
-
+total = 0
 # réponse 6.12
+print("------------exo 6.12------------")
+for i in my_list:
+    if i <= 10:
+        total += i
+print(total)
+
 
 # exo 6.13
 # Multipliez chacun des nombres dans la liste par 100, réaffactez le résultat à la place de la valeur originelle puis affichez le résultat
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.13
+print("-------------exo 6.13------------")
+my_list2 = [number * 100 for number in my_list]
+my_list = my_list2
+
+print(my_list)
 
 # exo 6.14
 # Créez une deuxième liste ne contenant que les nombre entiers de la liste
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
+my_list2 = []
+number = 0
+
 
 # réponse 6.14
+print("-------------exo 6.14--------------")
+for number in my_list:
+    if type(number) == int:
+        my_list2.append(number)
+print(my_list2)
+
 
 # exo 6.15
 # Ici le but est d'intervertir les éléments de la liste deux à deux
@@ -122,12 +156,7 @@ my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.15
-
-# exo 6.16
-# Triez la liste en utilisant l'algorithme du tri bulle puis affichez la liste
-my_list = [2.71, 42, 123, 2, 3.14, 1.61]
-
-# réponse 6.16
+print("------------exo 6.15----------")
 
 # code 6.1
 # Lire la valeur de la ligne `m` et de la colonne `n` d'un tableau en 2 dimensions
@@ -155,6 +184,7 @@ for _ in range(0, size):
 print(matrix)
 
 # réponse 6.17
+print("-----------exo 6.17------------")
 
 # code 6.2
 # Pour afficher toutes les combinaisons possibles de deux nombres de 0 à n inclus vous pouvez utiliser deux boucles `for` imbriquées
@@ -168,4 +198,4 @@ for i in range(0, 3):
 # Avec le même tableau en 2 dimensions, affichez toutes les valeurs plus petites ou égales à 50 ainsi que leur cordoonnées (ligne et colonne)
 
 # réponse 6.18
-
+print("-----------exo 6.18-----------")
