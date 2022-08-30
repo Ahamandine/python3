@@ -79,7 +79,10 @@ my_dict = {
 # réponse 9.5
 
 print("Exercice 9.5")
-my_dict.pop('foo')
+
+if 'foo' in my_dict:
+    del my_dict['foo']
+
 print(my_dict)
 
 # exo 9.6
@@ -119,10 +122,10 @@ my_dict = {
     'baz': 'lorem ipsum',
     'lorem': True
 }
-
 # réponse 9.8
 print("Exercice 9.8")
-print(my_dict.items())
+for value in my_dict:
+    print(my_dict[value])
 
 
 # exo 9.9
@@ -140,9 +143,10 @@ my_dict = {
 # etc...
 
 # réponse 9.9
-#print("Exercice 9.9")
-#for key, value in my_dict:
-    #print(f"key: {key}, value: {value}")
+print("Exercice 9.9")
+for i in my_dict:
+    print(f'key: {i}, value: {my_dict[i]}')
+
 
 # exo 9.10
 # En utilisant une boucle `for` et la méthode `items()`, affichez les clés et les valeurs qui se trouvent dans le dictionnaire
