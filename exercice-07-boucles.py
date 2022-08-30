@@ -7,9 +7,9 @@ import random
 
 # réponse 7.1
 print("Exercice 7.1")
-i = 0
-for i in range(0, 100):
-    print(i)
+n = 0
+for n in range(0, 100):
+    print(n)
 
 # exo 7.2
 # en utilisant une boucle for, affichez les nombre de 0 à 100 inclus
@@ -36,7 +36,7 @@ print(i)
 # réponse 7.3
 print("Exercice 7.3")
 
-for i in range(1, 100 + 1):
+for i in range(0, 100 + 1):
     r = random.randint(1, 10)
     if r == 1:
         print(r)
@@ -226,9 +226,9 @@ for i in range(1, 100 + 1):
 
 # réponse 7.18
 print("Exercice 7.18")
-r = random.randint(1, 100 + 1)
-while r in range(1, 100 + 1):
-    r = random.randint(1, 100 + 1)
+while i != 100:
+    i = random.randint(1, 100 + 1)
+    print(i)
 
 
 
