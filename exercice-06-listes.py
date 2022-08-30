@@ -154,9 +154,16 @@ print(my_list2)
 #
 #   my_list = [42, 2.71, 2, 123, 1.61, 3.14]
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
-
+loadingList = []
 # réponse 6.15
 print("------------exo 6.15----------")
+for i in range(0, len(my_list), 2) :
+    if i + 1 : 
+        loadingList = my_list[i]
+        my_list[i]= my_list[i + 1]
+        my_list[i +1] = loadingList
+print(my_list)
+
 
 # code 6.1
 # Lire la valeur de la ligne `m` et de la colonne `n` d'un tableau en 2 dimensions
@@ -169,6 +176,7 @@ matrix = [
     [7, 8, 9],
 ]
 # Cette ligne affiche `6`
+print("-----code 6.1-----")
 print(matrix[1][2])
 
 # exo 6.17
@@ -185,7 +193,7 @@ print(matrix)
 
 # réponse 6.17
 print("-----------exo 6.17------------")
-
+print(matrix[3][2])
 # code 6.2
 # Pour afficher toutes les combinaisons possibles de deux nombres de 0 à n inclus vous pouvez utiliser deux boucles `for` imbriquées
 #
@@ -199,3 +207,6 @@ for i in range(0, 3):
 
 # réponse 6.18
 print("-----------exo 6.18-----------")
+for i in range(0, 50 + 1):
+    for j in range(0, 50 +1):
+        print(i, j)
