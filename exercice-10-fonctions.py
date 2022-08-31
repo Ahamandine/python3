@@ -30,7 +30,7 @@ print(resultat)
 
 print("Exercice 10.2")
 def my_diff(a: int, b: int):
-    return b - a
+    return a - b
 
 a = 50
 b = 25
@@ -139,16 +139,19 @@ print(compare(a, b))
 # réponse 10.6
 print("Exercice 10.6")
 
-def meters_to_miles(a):
-    return a * 1609.344
 
-a = 1000
+def meters_to_miles(a):
+    return a / 1609.344
+
 print(meters_to_miles(a))
 
+a = 1000
+
 def miles_to_meters(b):
-    return b / 1609.344
+    return b * 1609.344
 
 b = 10
+
 print(miles_to_meters(b))
 
 # exo 10.7
