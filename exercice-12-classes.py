@@ -15,10 +15,6 @@
 print("Exercice 12.1")
 
 class User:
-    firstname = ''
-    lastname = ''
-    email = ''
-    newsletter = False
 
     def __init__(self, firstname: str, lastname: str, email: str, newsletter: bool=False):
         self.firstname = firstname
@@ -76,8 +72,8 @@ print(user4)
 users = [user1, user2, user3, user4]
 
 for i in users:
-    if True:
-        print(f" {self.firstname} {self.email}")
+    if i.newsletter == True:
+        print(f" {i.firstname} {i.email}")
 
 # exo 12.4
 # Créez une classe nommée `ProductLorem` qui possède les attributs suivants :
@@ -145,7 +141,12 @@ print("Exercice 12.6")
 
 products = [product1, product2, product3]
 for i in products:
-    print(f"{products._price} {products._name}")
+    print(f"{i._price} {i._name}")
+
+total = 0
+for i in products:
+    total += i._price
+print(round(total, 2))
 
 # exo 12.7
 # Créez une classe nommée `ProductIpsum` qui possède les attributs suivants :
@@ -194,9 +195,11 @@ class ProductIpsum:
     def set_tax(self, _tax):
         self._tax = _tax
     
-    #def get_tax_fee(self, _tax):
+    def get_tax_fee(self):
+        return self.get_price * self.get_tax / 100
 
-    #def get_tax_included_price(self)
+    def get_tax_included_price(self):
+        return self.get_price + self.get_tax_fee
 
 
 # exo 12.8
@@ -236,3 +239,24 @@ product3 = ProductIpsum('Amet', 16.18, 5.5)
 print("Exercice 12.9")
 
 products = [product1, product2, product3]
+
+for product in products :
+    print(f" {product._name} {product._price} {product._tax} {product.get_tax_included_price}")
+
+taxFree = 0
+
+for product in products :
+    taxFree += product._price
+print(round(taxFree,2))
+
+taxSum = 0
+
+for product in products :
+    taxSum += product._tax
+print(round(taxSum, 2))
+
+taxIncludedSum = 0
+
+for product in products :
+    taxIncludedSum += product.get_tax_included_price
+print(round(taxIncludedSum, 2))
