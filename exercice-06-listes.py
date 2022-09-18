@@ -207,6 +207,7 @@ for i in range(0, 3):
 
 # réponse 6.18
 print("-----------exo 6.18-----------")
-for i in range(0, 50 + 1):
-    for j in range(0, 50 +1):
-        print(i, j)
+for i in matrix:
+    for j in matrix:
+        if matrix <= 50:
+            print(matrix[i][j])
